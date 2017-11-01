@@ -23,7 +23,6 @@ class SelectableChasisSpace: SelectableNode {
     var part: SKSpriteNode?
     var score: Int = 0
     var anchorPoints = [ComponentAnchorPoint]()
-    var currentScene: GamePlayScene?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isPartPlaced == false {
@@ -76,10 +75,6 @@ class SelectableChasisSpace: SelectableNode {
         self.isUserInteractionEnabled = true
         
         
-        if let base = self.parent as? ItemBaseSprite,
-            let scene = base.parentScene {
-            self.currentScene = scene
-        }
     }
     
     override var isSelected: Bool  {
