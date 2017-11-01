@@ -7,6 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0AFD231FA55687008960AB /* GamePlayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD221FA55687008960AB /* GamePlayScene.sks */; };
+		5F0AFD251FA556D9008960AB /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD241FA556D9008960AB /* GamePlayScene.swift */; };
+		5F0AFD421FA55765008960AB /* toolWelderButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD271FA55761008960AB /* toolWelderButtonSel@2x.png */; };
+		5F0AFD431FA55765008960AB /* testPhoneBattery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD281FA55761008960AB /* testPhoneBattery@2x.png */; };
+		5F0AFD441FA55765008960AB /* testPhoneBatteryThumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD291FA55761008960AB /* testPhoneBatteryThumbnail@2x.png */; };
+		5F0AFD451FA55765008960AB /* anchorPointFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD2A1FA55761008960AB /* anchorPointFail@2x.png */; };
+		5F0AFD461FA55765008960AB /* testPhoneFlashMemoThumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD2B1FA55761008960AB /* testPhoneFlashMemoThumbnail@2x.png */; };
+		5F0AFD471FA55765008960AB /* anchorPointWelder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD2C1FA55762008960AB /* anchorPointWelder@2x.png */; };
+		5F0AFD481FA55765008960AB /* beltBckg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD2D1FA55762008960AB /* beltBckg@2x.png */; };
+		5F0AFD491FA55765008960AB /* toolsBckg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD2E1FA55762008960AB /* toolsBckg@2x.png */; };
+		5F0AFD4A1FA55765008960AB /* testPhoneFlashMemo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD2F1FA55762008960AB /* testPhoneFlashMemo@2x.png */; };
+		5F0AFD4B1FA55765008960AB /* toolScrewButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD301FA55762008960AB /* toolScrewButtonSel@2x.png */; };
+		5F0AFD4C1FA55765008960AB /* anchorPointScrew@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD311FA55762008960AB /* anchorPointScrew@2x.png */; };
+		5F0AFD4D1FA55765008960AB /* partSlotSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD321FA55762008960AB /* partSlotSelect@2x.png */; };
+		5F0AFD4E1FA55765008960AB /* testPhoneBoard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD331FA55762008960AB /* testPhoneBoard@2x.png */; };
+		5F0AFD4F1FA55765008960AB /* partSlotUnselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD341FA55763008960AB /* partSlotUnselect@2x.png */; };
+		5F0AFD501FA55765008960AB /* testPhoneFrontThumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD351FA55763008960AB /* testPhoneFrontThumbnail@2x.png */; };
+		5F0AFD511FA55765008960AB /* toolScrewButtonUnSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD361FA55763008960AB /* toolScrewButtonUnSel@2x.png */; };
+		5F0AFD521FA55765008960AB /* testPhoneFront@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD371FA55763008960AB /* testPhoneFront@2x.png */; };
+		5F0AFD531FA55765008960AB /* testPhoneCamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD381FA55763008960AB /* testPhoneCamera@2x.png */; };
+		5F0AFD541FA55765008960AB /* toolGlueButtonSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD391FA55763008960AB /* toolGlueButtonSel@2x.png */; };
+		5F0AFD551FA55765008960AB /* toolGlueButtonUnSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD3A1FA55763008960AB /* toolGlueButtonUnSel@2x.png */; };
+		5F0AFD561FA55765008960AB /* testPhoneBoardThumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD3B1FA55763008960AB /* testPhoneBoardThumbnail@2x.png */; };
+		5F0AFD571FA55765008960AB /* testPhoneChasis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD3C1FA55763008960AB /* testPhoneChasis@2x.png */; };
+		5F0AFD581FA55765008960AB /* toolWelderButtonUnSel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD3D1FA55763008960AB /* toolWelderButtonUnSel@2x.png */; };
+		5F0AFD591FA55765008960AB /* anchorPointGlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD3E1FA55764008960AB /* anchorPointGlue@2x.png */; };
+		5F0AFD5A1FA55765008960AB /* anchorPointOk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD3F1FA55764008960AB /* anchorPointOk@2x.png */; };
+		5F0AFD5B1FA55765008960AB /* partsBckg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD401FA55764008960AB /* partsBckg@2x.png */; };
+		5F0AFD5C1FA55765008960AB /* partSlotPage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD411FA55764008960AB /* partSlotPage@2x.png */; };
+		5F0AFD621FA56292008960AB /* testPhoneGuideChasis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD5D1FA56290008960AB /* testPhoneGuideChasis@2x.png */; };
+		5F0AFD631FA56292008960AB /* testPhoneBatteryGuideChasis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD5E1FA56290008960AB /* testPhoneBatteryGuideChasis@2x.png */; };
+		5F0AFD641FA56292008960AB /* testPhoneCameraGuideChasis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD5F1FA56291008960AB /* testPhoneCameraGuideChasis@2x.png */; };
+		5F0AFD651FA56292008960AB /* testPhoneBoardGuideChasis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD601FA56291008960AB /* testPhoneBoardGuideChasis@2x.png */; };
+		5F0AFD661FA56292008960AB /* testPhoneMemoryGuideChasis@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD611FA56292008960AB /* testPhoneMemoryGuideChasis@2x.png */; };
+		5F0AFD6A1FA56EF9008960AB /* ScrewToolSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD691FA56EF9008960AB /* ScrewToolSprite.swift */; };
+		5F0AFD6C1FA57FD6008960AB /* GlueToolSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD6B1FA57FD6008960AB /* GlueToolSprite.swift */; };
+		5F0AFD6E1FA58323008960AB /* WelderToolSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD6D1FA58323008960AB /* WelderToolSprite.swift */; };
+		5F0AFD711FA58CE9008960AB /* UserSelectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD701FA58CE9008960AB /* UserSelectionState.swift */; };
+		5F0AFD731FA58E1F008960AB /* SelectableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD721FA58E1F008960AB /* SelectableNode.swift */; };
+		5F0AFD751FA59580008960AB /* SelectableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD741FA59580008960AB /* SelectableComponent.swift */; };
+		5F0AFD771FA5AF44008960AB /* TestPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD761FA5AF44008960AB /* TestPhone.swift */; };
+		5F0AFD791FA5AF5E008960AB /* TestPhone.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD781FA5AF5E008960AB /* TestPhone.sks */; };
+		5F0AFD7B1FA5B5EB008960AB /* SelectableChasisSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7A1FA5B5EB008960AB /* SelectableChasisSpace.swift */; };
+		5F0AFD7D1FA5BA9C008960AB /* ItemBaseSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */; };
+		5F0AFD7F1FA5CAA0008960AB /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7E1FA5CAA0008960AB /* Levels.plist */; };
+		5F0AFD811FA5D7E3008960AB /* ComponentAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */; };
 		5F5D1ED11FA4A84E0079ED6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D1ED01FA4A84E0079ED6C /* AppDelegate.swift */; };
 		5F5D1ED31FA4A84E0079ED6C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D1ED21FA4A84E0079ED6C /* GameScene.sks */; };
 		5F5D1ED51FA4A84E0079ED6C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D1ED41FA4A84E0079ED6C /* Actions.sks */; };
@@ -29,6 +75,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0AFD221FA55687008960AB /* GamePlayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GamePlayScene.sks; sourceTree = "<group>"; };
+		5F0AFD241FA556D9008960AB /* GamePlayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayScene.swift; sourceTree = "<group>"; };
+		5F0AFD271FA55761008960AB /* toolWelderButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolWelderButtonSel@2x.png"; sourceTree = "<group>"; };
+		5F0AFD281FA55761008960AB /* testPhoneBattery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneBattery@2x.png"; sourceTree = "<group>"; };
+		5F0AFD291FA55761008960AB /* testPhoneBatteryThumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneBatteryThumbnail@2x.png"; sourceTree = "<group>"; };
+		5F0AFD2A1FA55761008960AB /* anchorPointFail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anchorPointFail@2x.png"; sourceTree = "<group>"; };
+		5F0AFD2B1FA55761008960AB /* testPhoneFlashMemoThumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneFlashMemoThumbnail@2x.png"; sourceTree = "<group>"; };
+		5F0AFD2C1FA55762008960AB /* anchorPointWelder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anchorPointWelder@2x.png"; sourceTree = "<group>"; };
+		5F0AFD2D1FA55762008960AB /* beltBckg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beltBckg@2x.png"; sourceTree = "<group>"; };
+		5F0AFD2E1FA55762008960AB /* toolsBckg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolsBckg@2x.png"; sourceTree = "<group>"; };
+		5F0AFD2F1FA55762008960AB /* testPhoneFlashMemo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneFlashMemo@2x.png"; sourceTree = "<group>"; };
+		5F0AFD301FA55762008960AB /* toolScrewButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolScrewButtonSel@2x.png"; sourceTree = "<group>"; };
+		5F0AFD311FA55762008960AB /* anchorPointScrew@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anchorPointScrew@2x.png"; sourceTree = "<group>"; };
+		5F0AFD321FA55762008960AB /* partSlotSelect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "partSlotSelect@2x.png"; sourceTree = "<group>"; };
+		5F0AFD331FA55762008960AB /* testPhoneBoard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneBoard@2x.png"; sourceTree = "<group>"; };
+		5F0AFD341FA55763008960AB /* partSlotUnselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "partSlotUnselect@2x.png"; sourceTree = "<group>"; };
+		5F0AFD351FA55763008960AB /* testPhoneFrontThumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneFrontThumbnail@2x.png"; sourceTree = "<group>"; };
+		5F0AFD361FA55763008960AB /* toolScrewButtonUnSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolScrewButtonUnSel@2x.png"; sourceTree = "<group>"; };
+		5F0AFD371FA55763008960AB /* testPhoneFront@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneFront@2x.png"; sourceTree = "<group>"; };
+		5F0AFD381FA55763008960AB /* testPhoneCamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneCamera@2x.png"; sourceTree = "<group>"; };
+		5F0AFD391FA55763008960AB /* toolGlueButtonSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolGlueButtonSel@2x.png"; sourceTree = "<group>"; };
+		5F0AFD3A1FA55763008960AB /* toolGlueButtonUnSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolGlueButtonUnSel@2x.png"; sourceTree = "<group>"; };
+		5F0AFD3B1FA55763008960AB /* testPhoneBoardThumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneBoardThumbnail@2x.png"; sourceTree = "<group>"; };
+		5F0AFD3C1FA55763008960AB /* testPhoneChasis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneChasis@2x.png"; sourceTree = "<group>"; };
+		5F0AFD3D1FA55763008960AB /* toolWelderButtonUnSel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolWelderButtonUnSel@2x.png"; sourceTree = "<group>"; };
+		5F0AFD3E1FA55764008960AB /* anchorPointGlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anchorPointGlue@2x.png"; sourceTree = "<group>"; };
+		5F0AFD3F1FA55764008960AB /* anchorPointOk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anchorPointOk@2x.png"; sourceTree = "<group>"; };
+		5F0AFD401FA55764008960AB /* partsBckg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "partsBckg@2x.png"; sourceTree = "<group>"; };
+		5F0AFD411FA55764008960AB /* partSlotPage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "partSlotPage@2x.png"; sourceTree = "<group>"; };
+		5F0AFD5D1FA56290008960AB /* testPhoneGuideChasis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneGuideChasis@2x.png"; sourceTree = "<group>"; };
+		5F0AFD5E1FA56290008960AB /* testPhoneBatteryGuideChasis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneBatteryGuideChasis@2x.png"; sourceTree = "<group>"; };
+		5F0AFD5F1FA56291008960AB /* testPhoneCameraGuideChasis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneCameraGuideChasis@2x.png"; sourceTree = "<group>"; };
+		5F0AFD601FA56291008960AB /* testPhoneBoardGuideChasis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneBoardGuideChasis@2x.png"; sourceTree = "<group>"; };
+		5F0AFD611FA56292008960AB /* testPhoneMemoryGuideChasis@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testPhoneMemoryGuideChasis@2x.png"; sourceTree = "<group>"; };
+		5F0AFD691FA56EF9008960AB /* ScrewToolSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrewToolSprite.swift; sourceTree = "<group>"; };
+		5F0AFD6B1FA57FD6008960AB /* GlueToolSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlueToolSprite.swift; sourceTree = "<group>"; };
+		5F0AFD6D1FA58323008960AB /* WelderToolSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelderToolSprite.swift; sourceTree = "<group>"; };
+		5F0AFD701FA58CE9008960AB /* UserSelectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionState.swift; sourceTree = "<group>"; };
+		5F0AFD721FA58E1F008960AB /* SelectableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableNode.swift; sourceTree = "<group>"; };
+		5F0AFD741FA59580008960AB /* SelectableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableComponent.swift; sourceTree = "<group>"; };
+		5F0AFD761FA5AF44008960AB /* TestPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPhone.swift; sourceTree = "<group>"; };
+		5F0AFD781FA5AF5E008960AB /* TestPhone.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestPhone.sks; sourceTree = "<group>"; };
+		5F0AFD7A1FA5B5EB008960AB /* SelectableChasisSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChasisSpace.swift; sourceTree = "<group>"; };
+		5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBaseSprite.swift; sourceTree = "<group>"; };
+		5F0AFD7E1FA5CAA0008960AB /* Levels.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
+		5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAnchorPoint.swift; sourceTree = "<group>"; };
 		5F5D1ECD1FA4A84E0079ED6C /* BlueCollar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueCollar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5D1ED01FA4A84E0079ED6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F5D1ED21FA4A84E0079ED6C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -62,6 +154,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0AFD261FA55753008960AB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5F0AFD2A1FA55761008960AB /* anchorPointFail@2x.png */,
+				5F0AFD3E1FA55764008960AB /* anchorPointGlue@2x.png */,
+				5F0AFD3F1FA55764008960AB /* anchorPointOk@2x.png */,
+				5F0AFD311FA55762008960AB /* anchorPointScrew@2x.png */,
+				5F0AFD2C1FA55762008960AB /* anchorPointWelder@2x.png */,
+				5F0AFD2D1FA55762008960AB /* beltBckg@2x.png */,
+				5F0AFD401FA55764008960AB /* partsBckg@2x.png */,
+				5F0AFD411FA55764008960AB /* partSlotPage@2x.png */,
+				5F0AFD321FA55762008960AB /* partSlotSelect@2x.png */,
+				5F0AFD341FA55763008960AB /* partSlotUnselect@2x.png */,
+				5F0AFD281FA55761008960AB /* testPhoneBattery@2x.png */,
+				5F0AFD291FA55761008960AB /* testPhoneBatteryThumbnail@2x.png */,
+				5F0AFD331FA55762008960AB /* testPhoneBoard@2x.png */,
+				5F0AFD3B1FA55763008960AB /* testPhoneBoardThumbnail@2x.png */,
+				5F0AFD381FA55763008960AB /* testPhoneCamera@2x.png */,
+				5F0AFD3C1FA55763008960AB /* testPhoneChasis@2x.png */,
+				5F0AFD2F1FA55762008960AB /* testPhoneFlashMemo@2x.png */,
+				5F0AFD2B1FA55761008960AB /* testPhoneFlashMemoThumbnail@2x.png */,
+				5F0AFD371FA55763008960AB /* testPhoneFront@2x.png */,
+				5F0AFD351FA55763008960AB /* testPhoneFrontThumbnail@2x.png */,
+				5F0AFD391FA55763008960AB /* toolGlueButtonSel@2x.png */,
+				5F0AFD3A1FA55763008960AB /* toolGlueButtonUnSel@2x.png */,
+				5F0AFD2E1FA55762008960AB /* toolsBckg@2x.png */,
+				5F0AFD301FA55762008960AB /* toolScrewButtonSel@2x.png */,
+				5F0AFD361FA55763008960AB /* toolScrewButtonUnSel@2x.png */,
+				5F0AFD271FA55761008960AB /* toolWelderButtonSel@2x.png */,
+				5F0AFD3D1FA55763008960AB /* toolWelderButtonUnSel@2x.png */,
+				5F0AFD5E1FA56290008960AB /* testPhoneBatteryGuideChasis@2x.png */,
+				5F0AFD601FA56291008960AB /* testPhoneBoardGuideChasis@2x.png */,
+				5F0AFD5F1FA56291008960AB /* testPhoneCameraGuideChasis@2x.png */,
+				5F0AFD5D1FA56290008960AB /* testPhoneGuideChasis@2x.png */,
+				5F0AFD611FA56292008960AB /* testPhoneMemoryGuideChasis@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5F0AFD6F1FA58CB1008960AB /* States */ = {
+			isa = PBXGroup;
+			children = (
+				5F0AFD701FA58CE9008960AB /* UserSelectionState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
 		5F5D1EC41FA4A84E0079ED6C = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +223,25 @@
 			isa = PBXGroup;
 			children = (
 				5F5D1ED01FA4A84E0079ED6C /* AppDelegate.swift */,
+				5F5D1ED81FA4A84E0079ED6C /* GameViewController.swift */,
 				5F5D1ED21FA4A84E0079ED6C /* GameScene.sks */,
 				5F5D1ED41FA4A84E0079ED6C /* Actions.sks */,
 				5F5D1ED61FA4A84E0079ED6C /* GameScene.swift */,
-				5F5D1ED81FA4A84E0079ED6C /* GameViewController.swift */,
+				5F0AFD221FA55687008960AB /* GamePlayScene.sks */,
+				5F0AFD761FA5AF44008960AB /* TestPhone.swift */,
+				5F0AFD781FA5AF5E008960AB /* TestPhone.sks */,
+				5F0AFD241FA556D9008960AB /* GamePlayScene.swift */,
+				5F0AFD691FA56EF9008960AB /* ScrewToolSprite.swift */,
+				5F0AFD6B1FA57FD6008960AB /* GlueToolSprite.swift */,
+				5F0AFD6D1FA58323008960AB /* WelderToolSprite.swift */,
+				5F0AFD721FA58E1F008960AB /* SelectableNode.swift */,
+				5F0AFD741FA59580008960AB /* SelectableComponent.swift */,
+				5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */,
+				5F0AFD7A1FA5B5EB008960AB /* SelectableChasisSpace.swift */,
+				5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */,
+				5F0AFD7E1FA5CAA0008960AB /* Levels.plist */,
+				5F0AFD6F1FA58CB1008960AB /* States */,
+				5F0AFD261FA55753008960AB /* Assets */,
 				5F5D1EDA1FA4A84E0079ED6C /* Main.storyboard */,
 				5F5D1EDD1FA4A84E0079ED6C /* Assets.xcassets */,
 				5F5D1EDF1FA4A84E0079ED6C /* LaunchScreen.storyboard */,
@@ -188,11 +342,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0AFD4A1FA55765008960AB /* testPhoneFlashMemo@2x.png in Resources */,
+				5F0AFD7F1FA5CAA0008960AB /* Levels.plist in Resources */,
 				5F5D1EDC1FA4A84E0079ED6C /* Main.storyboard in Resources */,
+				5F0AFD431FA55765008960AB /* testPhoneBattery@2x.png in Resources */,
 				5F5D1ED31FA4A84E0079ED6C /* GameScene.sks in Resources */,
+				5F0AFD661FA56292008960AB /* testPhoneMemoryGuideChasis@2x.png in Resources */,
+				5F0AFD421FA55765008960AB /* toolWelderButtonSel@2x.png in Resources */,
+				5F0AFD4E1FA55765008960AB /* testPhoneBoard@2x.png in Resources */,
+				5F0AFD231FA55687008960AB /* GamePlayScene.sks in Resources */,
+				5F0AFD581FA55765008960AB /* toolWelderButtonUnSel@2x.png in Resources */,
+				5F0AFD471FA55765008960AB /* anchorPointWelder@2x.png in Resources */,
+				5F0AFD621FA56292008960AB /* testPhoneGuideChasis@2x.png in Resources */,
 				5F5D1EDE1FA4A84E0079ED6C /* Assets.xcassets in Resources */,
+				5F0AFD791FA5AF5E008960AB /* TestPhone.sks in Resources */,
+				5F0AFD521FA55765008960AB /* testPhoneFront@2x.png in Resources */,
+				5F0AFD5A1FA55765008960AB /* anchorPointOk@2x.png in Resources */,
+				5F0AFD511FA55765008960AB /* toolScrewButtonUnSel@2x.png in Resources */,
+				5F0AFD4B1FA55765008960AB /* toolScrewButtonSel@2x.png in Resources */,
+				5F0AFD5B1FA55765008960AB /* partsBckg@2x.png in Resources */,
+				5F0AFD491FA55765008960AB /* toolsBckg@2x.png in Resources */,
+				5F0AFD501FA55765008960AB /* testPhoneFrontThumbnail@2x.png in Resources */,
+				5F0AFD531FA55765008960AB /* testPhoneCamera@2x.png in Resources */,
+				5F0AFD451FA55765008960AB /* anchorPointFail@2x.png in Resources */,
 				5F5D1EE11FA4A84E0079ED6C /* LaunchScreen.storyboard in Resources */,
+				5F0AFD551FA55765008960AB /* toolGlueButtonUnSel@2x.png in Resources */,
+				5F0AFD591FA55765008960AB /* anchorPointGlue@2x.png in Resources */,
+				5F0AFD4C1FA55765008960AB /* anchorPointScrew@2x.png in Resources */,
+				5F0AFD5C1FA55765008960AB /* partSlotPage@2x.png in Resources */,
+				5F0AFD631FA56292008960AB /* testPhoneBatteryGuideChasis@2x.png in Resources */,
+				5F0AFD641FA56292008960AB /* testPhoneCameraGuideChasis@2x.png in Resources */,
+				5F0AFD461FA55765008960AB /* testPhoneFlashMemoThumbnail@2x.png in Resources */,
 				5F5D1ED51FA4A84E0079ED6C /* Actions.sks in Resources */,
+				5F0AFD4F1FA55765008960AB /* partSlotUnselect@2x.png in Resources */,
+				5F0AFD561FA55765008960AB /* testPhoneBoardThumbnail@2x.png in Resources */,
+				5F0AFD4D1FA55765008960AB /* partSlotSelect@2x.png in Resources */,
+				5F0AFD651FA56292008960AB /* testPhoneBoardGuideChasis@2x.png in Resources */,
+				5F0AFD571FA55765008960AB /* testPhoneChasis@2x.png in Resources */,
+				5F0AFD481FA55765008960AB /* beltBckg@2x.png in Resources */,
+				5F0AFD541FA55765008960AB /* toolGlueButtonSel@2x.png in Resources */,
+				5F0AFD441FA55765008960AB /* testPhoneBatteryThumbnail@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0AFD731FA58E1F008960AB /* SelectableNode.swift in Sources */,
+				5F0AFD771FA5AF44008960AB /* TestPhone.swift in Sources */,
+				5F0AFD6E1FA58323008960AB /* WelderToolSprite.swift in Sources */,
+				5F0AFD811FA5D7E3008960AB /* ComponentAnchorPoint.swift in Sources */,
+				5F0AFD711FA58CE9008960AB /* UserSelectionState.swift in Sources */,
+				5F0AFD251FA556D9008960AB /* GamePlayScene.swift in Sources */,
+				5F0AFD7B1FA5B5EB008960AB /* SelectableChasisSpace.swift in Sources */,
+				5F0AFD6A1FA56EF9008960AB /* ScrewToolSprite.swift in Sources */,
+				5F0AFD7D1FA5BA9C008960AB /* ItemBaseSprite.swift in Sources */,
 				5F5D1ED71FA4A84E0079ED6C /* GameScene.swift in Sources */,
 				5F5D1ED91FA4A84E0079ED6C /* GameViewController.swift in Sources */,
 				5F5D1ED11FA4A84E0079ED6C /* AppDelegate.swift in Sources */,
+				5F0AFD751FA59580008960AB /* SelectableComponent.swift in Sources */,
+				5F0AFD6C1FA57FD6008960AB /* GlueToolSprite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3834BT8D4U;
 				INFOPLIST_FILE = BlueCollar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcl.BlueCollar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3834BT8D4U;
 				INFOPLIST_FILE = BlueCollar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcl.BlueCollar;
 				PRODUCT_NAME = "$(TARGET_NAME)";

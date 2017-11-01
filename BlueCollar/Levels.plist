@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Levels</key>
+	<array>
+		<dict>
+			<key>Products</key>
+			<array>
+				<dict>
+					<key>sceneName</key>
+					<string>TestPhone</string>
+					<key>parentBaseName</key>
+					<string>testPhoneGuideChasis</string>
+					<key>parts</key>
+					<array>
+						<dict>
+							<key>baseImage</key>
+							<string>testPhoneBoardGuideChasis</string>
+							<key>expectedImage</key>
+							<string>testPhoneBoard</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
