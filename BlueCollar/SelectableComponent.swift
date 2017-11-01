@@ -24,8 +24,9 @@ class SelectableComponent: SelectableNode {
     
    override var isSelected: Bool  {
         didSet {
-            self.texture = isSelected ? super.selectedTexture : super.unSelectedTexture
             
+            self.texture = isSelected ? super.selectedTexture : super.unSelectedTexture
+            UserSelectionManager.shared.selectedSlotPartName = isSelected ? partNaming ?? "UNKNOWN" : ""
         }
     }
 

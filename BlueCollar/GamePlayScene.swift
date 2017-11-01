@@ -19,6 +19,12 @@ enum SelectionState {
 }
 
 
+protocol SelectionHandlerProtocol: class {
+    
+    func resetUserSelection()
+    
+}
+
 
 class GamePlayScene: SKScene {
     
@@ -33,21 +39,22 @@ class GamePlayScene: SKScene {
     var stateMachine: GKStateMachine!
     
     var selectionState: SelectionState = .unselected {
-        
         didSet {
+            UserSelectionManager.shared.selectionState = selectionState
             self.buttonToolScrew?.isSelected = false
             self.buttonToolGlue?.isSelected = false
             self.buttonToolWelder?.isSelected = false
             selectableComponents.forEach{$0.isSelected = false}
         }
-        
     }
     
     override func sceneDidLoad() {
-        
+        selectionState = .unselected
         loadToolSlots()
         loadPartSlots()
-       let _ = loadNewItem(fileName: "TestPhone")
+        // let _ = loadNewItem(fileName: "TestPhone")
+        
+        let _ = loadNewProductTest(fileName: "SmartPhoneABase")
     }
     
     func loadToolSlots() {
@@ -61,7 +68,7 @@ class GamePlayScene: SKScene {
         self.buttonToolScrew = btnScrew
         self.buttonToolGlue = btnGlue
         self.buttonToolWelder = btnWelder
-
+        
         
     }
     
@@ -72,7 +79,8 @@ class GamePlayScene: SKScene {
             let partSlot1 = partsBck.childNode(withName: "partSlot1") as? SelectableComponent,
             let partSlot2 = partsBck.childNode(withName: "partSlot2") as? SelectableComponent,
             let partSlot3 = partsBck.childNode(withName: "partSlot3") as? SelectableComponent,
-            let partSlot4 = partsBck.childNode(withName: "partSlot4") as? SelectableComponent else {
+            let partSlot4 = partsBck.childNode(withName: "partSlot4") as? SelectableComponent,
+            let partSlot5 = partsBck.childNode(withName: "partSlot5") as? SelectableComponent else {
                 
                 return
         }
@@ -102,43 +110,100 @@ class GamePlayScene: SKScene {
         partSlot4.addComponent(partName: "testPhoneFrontThumbnail@2x")
         self.selectableComponents.append(partSlot4)
         
+        partSlot5.tag = 5
+        partSlot5.partNaming = "boardA0"
+        partSlot5.addComponent(partName: "BoardA0Thumbnail")
+        self.selectableComponents.append(partSlot5)
+        
+        
     }
     
-    func loadNewItem(fileName: String) -> SKSpriteNode? {
+//    func loadNewItem(fileName: String) -> SKSpriteNode? {
+//
+//        guard let beltBck = self.childNode(withName: "beltBckg") as? SKSpriteNode, let itemScene = SKScene(fileNamed: fileName),
+//            let partsBck = itemScene.childNode(withName: "testPhoneGuideChasis") as? ItemBaseSprite,
+//            let fillSpace0 = partsBck.childNode(withName: "testPhoneBoardGuideChasis") as? SelectableChasisSpace,
+//            let anchor0Space0 = fillSpace0.childNode(withName: "anchorWelder0") as? ComponentAnchorPoint,
+//            let anchor1Space0 = fillSpace0.childNode(withName: "anchorWelder1") as? ComponentAnchorPoint,
+//            let anchor2Space0 = fillSpace0.childNode(withName: "anchorWelder2") as? ComponentAnchorPoint,
+//            let anchor3Space0 = fillSpace0.childNode(withName: "anchorWelder3") as? ComponentAnchorPoint,
+//            let fillSpace1 = partsBck.childNode(withName: "testPhoneCameraGuideChasis") as? SelectableChasisSpace,
+//            let fillSpace2 = partsBck.childNode(withName: "testPhoneMemoryGuideChasis") as? SelectableChasisSpace,
+//            let fillSpace3 = partsBck.childNode(withName: "testPhoneBatteryGuideChasis") as? SelectableChasisSpace else {
+//
+//                return nil
+//        }
+//
+//        anchor0Space0.anchorType = .welder
+//        anchor1Space0.anchorType = .welder
+//        anchor2Space0.anchorType = .welder
+//        anchor3Space0.anchorType = .welder
+//        fillSpace0.expectedPartName = "testPhoneBoard"
+//        fillSpace0.anchorPoints = [anchor0Space0, anchor1Space0, anchor2Space0, anchor3Space0]
+//        fillSpace1.expectedPartName = "testPhoneCamera"
+//        fillSpace2.expectedPartName = "testPhoneFlashMemo"
+//        fillSpace3.expectedPartName = "testPhoneBattery"
+//
+//        partsBck.fillableSpaces = [fillSpace0, fillSpace1, fillSpace2, fillSpace3]
+//        partsBck.removeFromParent()
+//        partsBck.parentScene = self
+//
+//        beltBck.addChild(partsBck)
+//
+//        return partsBck
+//
+//
+//    }
+    
+    func loadNewProductTest(fileName: String) -> SKSpriteNode? {
         
         guard let beltBck = self.childNode(withName: "beltBckg") as? SKSpriteNode, let itemScene = SKScene(fileNamed: fileName),
-            let partsBck = itemScene.childNode(withName: "testPhoneGuideChasis") as? ItemBaseSprite,
-       let fillSpace0 = partsBck.childNode(withName: "testPhoneBoardGuideChasis") as? SelectableChasisSpace,
-       let anchor0Space0 = fillSpace0.childNode(withName: "anchorWelder0") as? ComponentAnchorPoint,
-       let anchor1Space0 = fillSpace0.childNode(withName: "anchorWelder1") as? ComponentAnchorPoint,
-       let anchor2Space0 = fillSpace0.childNode(withName: "anchorWelder2") as? ComponentAnchorPoint,
-       let anchor3Space0 = fillSpace0.childNode(withName: "anchorWelder3") as? ComponentAnchorPoint,
-       let fillSpace1 = partsBck.childNode(withName: "testPhoneCameraGuideChasis") as? SelectableChasisSpace,
-       let fillSpace2 = partsBck.childNode(withName: "testPhoneMemoryGuideChasis") as? SelectableChasisSpace,
-       let fillSpace3 = partsBck.childNode(withName: "testPhoneBatteryGuideChasis") as? SelectableChasisSpace else {
+            let partsBck = itemScene.childNode(withName: "testPhoneGuideChasis") as? ItemBaseSprite else {
                 
                 return nil
         }
+        
+        partsBck.removeFromParent()
+       // partsBck.parentScene = self
+        beltBck.addChild(partsBck)
+        
+        guard let fillSpace0 = partsBck.childNode(withName: "testPhoneBoardGuideChasis") as? ChassisPart,
+            let partScene = SKScene(fileNamed: "BoardA0"),
+            let board = partScene.childNode(withName: "boardA0") as? Part,
+            let anchor0Space0 = board.childNode(withName: "anchorWelder0") as? ComponentAnchorPoint,
+            let anchor1Space0 = board.childNode(withName: "anchorWelder1") as? ComponentAnchorPoint,
+            let anchor2Space0 = board.childNode(withName: "anchorWelder2") as? ComponentAnchorPoint,
+            let anchor3Space0 = board.childNode(withName: "anchorWelder3") as? ComponentAnchorPoint
+            else {
+                return nil
+        }
+        
         anchor0Space0.anchorType = .welder
         anchor1Space0.anchorType = .welder
         anchor2Space0.anchorType = .welder
         anchor3Space0.anchorType = .welder
-        fillSpace0.expectedPartName = "testPhoneBoard"
-        fillSpace0.anchorPoints = [anchor0Space0, anchor1Space0, anchor2Space0, anchor3Space0]
-        fillSpace1.expectedPartName = "testPhoneCamera"
-        fillSpace2.expectedPartName = "testPhoneFlashMemo"
-        fillSpace3.expectedPartName = "testPhoneBattery"
         
-        partsBck.fillableSpaces = [fillSpace0, fillSpace1, fillSpace2, fillSpace3]
-        partsBck.removeFromParent()
-        partsBck.parentScene = self
         
-        beltBck.addChild(partsBck)
+        board.partName = board.name!
+        board.pointsToComplete = 40
+        board.anchorPoints = [anchor0Space0, anchor1Space0, anchor2Space0, anchor3Space0]
+        board.removeFromParent()
+        fillSpace0.sceneSelectionDelegate = self
+        fillSpace0.designedPart = board
+        fillSpace0.expectedPartName = board.name!
+        fillSpace0.isUserInteractionEnabled = true
         
         return partsBck
         
-        
     }
+    
+    
+//    func loadNewProductTest2(fileName: String) -> ItemUnit? {
+//        
+//        
+//        
+//        
+//    }
     
     func toolSlotTouched(state: SelectionState) {
         
@@ -207,7 +272,9 @@ class GamePlayScene: SKScene {
                 self.componentSlotTouched(idx: 3)
             case "partSlot4":
                 self.componentSlotTouched(idx: 4)
-
+            case "partSlot5":
+                self.componentSlotTouched(idx: 5)
+                
             default:
                 print("default")
             }
@@ -216,4 +283,15 @@ class GamePlayScene: SKScene {
         
     }
     
+}
+
+extension GamePlayScene: SelectionHandlerProtocol {
+    
+    func resetUserSelection() {
+        selectionState = .unselected
+    }
+    
+    
+    
+
 }

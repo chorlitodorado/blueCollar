@@ -49,7 +49,6 @@
 		5F0AFD751FA59580008960AB /* SelectableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD741FA59580008960AB /* SelectableComponent.swift */; };
 		5F0AFD771FA5AF44008960AB /* TestPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD761FA5AF44008960AB /* TestPhone.swift */; };
 		5F0AFD791FA5AF5E008960AB /* TestPhone.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD781FA5AF5E008960AB /* TestPhone.sks */; };
-		5F0AFD7B1FA5B5EB008960AB /* SelectableChasisSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7A1FA5B5EB008960AB /* SelectableChasisSpace.swift */; };
 		5F0AFD7D1FA5BA9C008960AB /* ItemBaseSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */; };
 		5F0AFD7F1FA5CAA0008960AB /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7E1FA5CAA0008960AB /* Levels.plist */; };
 		5F0AFD811FA5D7E3008960AB /* ComponentAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */; };
@@ -62,6 +61,15 @@
 		5F5D1EDE1FA4A84E0079ED6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D1EDD1FA4A84E0079ED6C /* Assets.xcassets */; };
 		5F5D1EE11FA4A84E0079ED6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D1EDF1FA4A84E0079ED6C /* LaunchScreen.storyboard */; };
 		5F5D1EEC1FA4A84E0079ED6C /* BlueCollarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D1EEB1FA4A84E0079ED6C /* BlueCollarTests.swift */; };
+		5FB916FC1FA96109000D87DD /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB916FB1FA96109000D87DD /* Part.swift */; };
+		5FB916FE1FA96CE6000D87DD /* ChassisPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB916FD1FA96CE6000D87DD /* ChassisPart.swift */; };
+		5FB917011FA97049000D87DD /* BoardA0.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917001FA97049000D87DD /* BoardA0.sks */; };
+		5FB917051FA97298000D87DD /* BoardA0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917031FA97298000D87DD /* BoardA0@2x.png */; };
+		5FB917061FA97298000D87DD /* BoardA0Thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917041FA97298000D87DD /* BoardA0Thumbnail@2x.png */; };
+		5FB917091FA976DA000D87DD /* SmartPhoneABase.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917081FA976DA000D87DD /* SmartPhoneABase.sks */; };
+		5FB9170B1FA97D32000D87DD /* UserSelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9170A1FA97D32000D87DD /* UserSelectionManager.swift */; };
+		5FB9170D1FA997A1000D87DD /* ChassisGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9170C1FA997A1000D87DD /* ChassisGroup.swift */; };
+		5FB9170F1FA99B49000D87DD /* ItemUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9170E1FA99B49000D87DD /* ItemUnit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,7 +125,6 @@
 		5F0AFD741FA59580008960AB /* SelectableComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableComponent.swift; sourceTree = "<group>"; };
 		5F0AFD761FA5AF44008960AB /* TestPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPhone.swift; sourceTree = "<group>"; };
 		5F0AFD781FA5AF5E008960AB /* TestPhone.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestPhone.sks; sourceTree = "<group>"; };
-		5F0AFD7A1FA5B5EB008960AB /* SelectableChasisSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableChasisSpace.swift; sourceTree = "<group>"; };
 		5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBaseSprite.swift; sourceTree = "<group>"; };
 		5F0AFD7E1FA5CAA0008960AB /* Levels.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
 		5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAnchorPoint.swift; sourceTree = "<group>"; };
@@ -134,6 +141,15 @@
 		5F5D1EE71FA4A84E0079ED6C /* BlueCollarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueCollarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5D1EEB1FA4A84E0079ED6C /* BlueCollarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCollarTests.swift; sourceTree = "<group>"; };
 		5F5D1EED1FA4A84E0079ED6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB916FB1FA96109000D87DD /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		5FB916FD1FA96CE6000D87DD /* ChassisPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChassisPart.swift; sourceTree = "<group>"; };
+		5FB917001FA97049000D87DD /* BoardA0.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BoardA0.sks; sourceTree = "<group>"; };
+		5FB917031FA97298000D87DD /* BoardA0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoardA0@2x.png"; sourceTree = "<group>"; };
+		5FB917041FA97298000D87DD /* BoardA0Thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BoardA0Thumbnail@2x.png"; sourceTree = "<group>"; };
+		5FB917081FA976DA000D87DD /* SmartPhoneABase.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SmartPhoneABase.sks; sourceTree = "<group>"; };
+		5FB9170A1FA97D32000D87DD /* UserSelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionManager.swift; sourceTree = "<group>"; };
+		5FB9170C1FA997A1000D87DD /* ChassisGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChassisGroup.swift; sourceTree = "<group>"; };
+		5FB9170E1FA99B49000D87DD /* ItemUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +173,7 @@
 		5F0AFD261FA55753008960AB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				5FB917021FA97272000D87DD /* PartsAssets */,
 				5F0AFD2A1FA55761008960AB /* anchorPointFail@2x.png */,
 				5F0AFD3E1FA55764008960AB /* anchorPointGlue@2x.png */,
 				5F0AFD3F1FA55764008960AB /* anchorPointOk@2x.png */,
@@ -230,6 +247,8 @@
 				5F0AFD221FA55687008960AB /* GamePlayScene.sks */,
 				5F0AFD761FA5AF44008960AB /* TestPhone.swift */,
 				5F0AFD781FA5AF5E008960AB /* TestPhone.sks */,
+				5FB9170A1FA97D32000D87DD /* UserSelectionManager.swift */,
+				5FB916FF1FA96FFC000D87DD /* Parts */,
 				5F0AFD241FA556D9008960AB /* GamePlayScene.swift */,
 				5F0AFD691FA56EF9008960AB /* ScrewToolSprite.swift */,
 				5F0AFD6B1FA57FD6008960AB /* GlueToolSprite.swift */,
@@ -237,8 +256,8 @@
 				5F0AFD721FA58E1F008960AB /* SelectableNode.swift */,
 				5F0AFD741FA59580008960AB /* SelectableComponent.swift */,
 				5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */,
-				5F0AFD7A1FA5B5EB008960AB /* SelectableChasisSpace.swift */,
 				5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */,
+				5FB916FA1FA960ED000D87DD /* Model */,
 				5F0AFD7E1FA5CAA0008960AB /* Levels.plist */,
 				5F0AFD6F1FA58CB1008960AB /* States */,
 				5F0AFD261FA55753008960AB /* Assets */,
@@ -257,6 +276,35 @@
 				5F5D1EED1FA4A84E0079ED6C /* Info.plist */,
 			);
 			path = BlueCollarTests;
+			sourceTree = "<group>";
+		};
+		5FB916FA1FA960ED000D87DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FB916FB1FA96109000D87DD /* Part.swift */,
+				5FB916FD1FA96CE6000D87DD /* ChassisPart.swift */,
+				5FB9170C1FA997A1000D87DD /* ChassisGroup.swift */,
+				5FB9170E1FA99B49000D87DD /* ItemUnit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FB916FF1FA96FFC000D87DD /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				5FB917001FA97049000D87DD /* BoardA0.sks */,
+				5FB917081FA976DA000D87DD /* SmartPhoneABase.sks */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		5FB917021FA97272000D87DD /* PartsAssets */ = {
+			isa = PBXGroup;
+			children = (
+				5FB917031FA97298000D87DD /* BoardA0@2x.png */,
+				5FB917041FA97298000D87DD /* BoardA0Thumbnail@2x.png */,
+			);
+			path = PartsAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,9 +403,12 @@
 				5F0AFD471FA55765008960AB /* anchorPointWelder@2x.png in Resources */,
 				5F0AFD621FA56292008960AB /* testPhoneGuideChasis@2x.png in Resources */,
 				5F5D1EDE1FA4A84E0079ED6C /* Assets.xcassets in Resources */,
+				5FB917061FA97298000D87DD /* BoardA0Thumbnail@2x.png in Resources */,
 				5F0AFD791FA5AF5E008960AB /* TestPhone.sks in Resources */,
+				5FB917091FA976DA000D87DD /* SmartPhoneABase.sks in Resources */,
 				5F0AFD521FA55765008960AB /* testPhoneFront@2x.png in Resources */,
 				5F0AFD5A1FA55765008960AB /* anchorPointOk@2x.png in Resources */,
+				5FB917051FA97298000D87DD /* BoardA0@2x.png in Resources */,
 				5F0AFD511FA55765008960AB /* toolScrewButtonUnSel@2x.png in Resources */,
 				5F0AFD4B1FA55765008960AB /* toolScrewButtonSel@2x.png in Resources */,
 				5F0AFD5B1FA55765008960AB /* partsBckg@2x.png in Resources */,
@@ -379,6 +430,7 @@
 				5F0AFD4D1FA55765008960AB /* partSlotSelect@2x.png in Resources */,
 				5F0AFD651FA56292008960AB /* testPhoneBoardGuideChasis@2x.png in Resources */,
 				5F0AFD571FA55765008960AB /* testPhoneChasis@2x.png in Resources */,
+				5FB917011FA97049000D87DD /* BoardA0.sks in Resources */,
 				5F0AFD481FA55765008960AB /* beltBckg@2x.png in Resources */,
 				5F0AFD541FA55765008960AB /* toolGlueButtonSel@2x.png in Resources */,
 				5F0AFD441FA55765008960AB /* testPhoneBatteryThumbnail@2x.png in Resources */,
@@ -400,18 +452,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0AFD731FA58E1F008960AB /* SelectableNode.swift in Sources */,
+				5FB916FE1FA96CE6000D87DD /* ChassisPart.swift in Sources */,
 				5F0AFD771FA5AF44008960AB /* TestPhone.swift in Sources */,
 				5F0AFD6E1FA58323008960AB /* WelderToolSprite.swift in Sources */,
 				5F0AFD811FA5D7E3008960AB /* ComponentAnchorPoint.swift in Sources */,
 				5F0AFD711FA58CE9008960AB /* UserSelectionState.swift in Sources */,
+				5FB9170D1FA997A1000D87DD /* ChassisGroup.swift in Sources */,
 				5F0AFD251FA556D9008960AB /* GamePlayScene.swift in Sources */,
-				5F0AFD7B1FA5B5EB008960AB /* SelectableChasisSpace.swift in Sources */,
 				5F0AFD6A1FA56EF9008960AB /* ScrewToolSprite.swift in Sources */,
 				5F0AFD7D1FA5BA9C008960AB /* ItemBaseSprite.swift in Sources */,
 				5F5D1ED71FA4A84E0079ED6C /* GameScene.swift in Sources */,
+				5FB9170B1FA97D32000D87DD /* UserSelectionManager.swift in Sources */,
 				5F5D1ED91FA4A84E0079ED6C /* GameViewController.swift in Sources */,
 				5F5D1ED11FA4A84E0079ED6C /* AppDelegate.swift in Sources */,
+				5FB9170F1FA99B49000D87DD /* ItemUnit.swift in Sources */,
 				5F0AFD751FA59580008960AB /* SelectableComponent.swift in Sources */,
+				5FB916FC1FA96109000D87DD /* Part.swift in Sources */,
 				5F0AFD6C1FA57FD6008960AB /* GlueToolSprite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

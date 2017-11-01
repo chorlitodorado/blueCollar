@@ -10,13 +10,13 @@ import SpriteKit
 
 class ItemBaseSprite: SKSpriteNode {
     
-    var fillableSpaces = [SelectableChasisSpace]()
+   // var fillableSpaces = [SelectableChasisSpace]()
     
     var maxScore: Int!
     
     var currentScore = 0
     
-    var parentScene: GamePlayScene!
+   // var parentScene: GamePlayScene!
     
     
 

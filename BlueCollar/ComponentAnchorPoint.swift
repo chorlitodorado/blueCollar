@@ -29,8 +29,10 @@ class ComponentAnchorPoint: SelectableNode {
         didSet {
             if isDisabled == false {
                 self.alpha = 1.0
+                self.isUserInteractionEnabled = true
             } else {
-              self.alpha = 0.4
+                
+                self.isUserInteractionEnabled = false
             }
         }
         
@@ -62,6 +64,36 @@ class ComponentAnchorPoint: SelectableNode {
             
         }
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        if UserSelectionManager.shared.selectionState != .unselected &&
+            UserSelectionManager.shared.selectionState != .assemblyComponent {
+        
+        switch anchorType! {
+        case .screw:
+            if UserSelectionManager.shared.selectionState == .toolScrew {
+                state = .correct
+            } else {
+                state = .wrong
+            }
+        case .glue:
+            if UserSelectionManager.shared.selectionState == .toolGlue {
+                state = .correct
+            } else {
+                state = .wrong
+            }
+        case .welder:
+            if UserSelectionManager.shared.selectionState == .toolWelder {
+                state = .correct
+            } else {
+                state = .wrong
+            }
+        }
+            
+        }
 
-
+    }
+    
+    
 }
