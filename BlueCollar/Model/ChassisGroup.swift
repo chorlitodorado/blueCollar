@@ -21,15 +21,13 @@ class ChassisGroup: SKSpriteNode {
     
     var currentScore: Int = 0
     
-//    init(chassisParts: [ChassisPart], maxScore: Int, initScore: Int, isCompleted: Bool, isItemBase: Bool) {
-//
-//        self.chassisParts = chassisParts
-//        self.maxScore = maxScore
-//        self.isCompleted = isCompleted
-//        self.isItemBase = isItemBase
-//        self.currentScore = initScore
-//    }
-//
     
+    
+    func getGroupScore() -> Int {
+        var sum = 0
+        chassisParts.forEach({ sum += $0.getPartScore()})
+        return sum
+        
+    }
     
 }

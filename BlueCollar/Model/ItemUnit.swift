@@ -19,19 +19,27 @@ class ItemUnit {
     // add difficulty
     // add
     let maxScore: Int
-    var currentScore: Int
     
-    var partsComponent = [ChassisGroup]()
-    
-    init(name: String, manufacturer: String, maxScore: Int, currentScore: Int, components: [ChassisGroup]) {
-        self.modelName = name
-        self.manufacturer = manufacturer
-        self.maxScore = maxScore
-        self.currentScore = currentScore
-        self.partsComponent = components
+    var currentScore: Int {
+        get {
+            var sum = 0
+            partsComponent.forEach({ sum += $0.getGroupScore()})
+            return sum
+            
+        }
+        
         
     }
     
+    var partsComponent = [ChassisGroup]()
+    
+    init(name: String, manufacturer: String, maxScore: Int, components: [ChassisGroup]) {
+        self.modelName = name
+        self.manufacturer = manufacturer
+        self.maxScore = maxScore
+        self.partsComponent = components
+        
+    }
     
     
 }

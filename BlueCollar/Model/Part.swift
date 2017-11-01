@@ -17,15 +17,31 @@ class Part: SKSpriteNode {
     
     var partName: String!
     
-    var pointsToComplete: Int!
+    var anchorPoints = [ComponentAnchorPoint]()
     
-    var isPlaced: Bool = false
-    
-    var currentPoints: Int = 0 {
-        didSet {
-            if currentPoints >= pointsToComplete {
-                state = .complete
+    var isCompleted: Bool {
+        // REFACTOR
+        get {
+            var r = false
+            for anch in anchorPoints {
+                if anch.state == .initial {
+                    r = false
+                    state = .incomplete
+                } else {
+                    state = .complete
+                    r = true
+                }
             }
+            return r
+        }
+    }
+    
+    
+    var score: Int {
+        get {
+            var sum = 0
+            anchorPoints.forEach({ sum += $0.score})
+            return sum
         }
         
     }
@@ -41,31 +57,6 @@ class Part: SKSpriteNode {
     }
 
 
-    var anchorPoints = [ComponentAnchorPoint]()
-    
-    var childrenParts = [Part]()
-    
-    
-//    init(texture: SKTexture, expectedPartName: String, pointsComplete: Int, currentPoints: Int, anchors: [ComponentAnchorPoint], parts: [Part], placed: Bool) {
-//        self.partName = expectedPartName
-//        self.pointsToComplete = pointsComplete
-//        self.currentPoints = currentPoints
-//        self.anchorPoints = anchors
-//        self.childrenParts = parts
-//        self.isPlaced = placed
-//
-//        super.init(texture: texture, color: .clear, size: texture.size())
-//  }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        
-        
-    }
     
     
 }

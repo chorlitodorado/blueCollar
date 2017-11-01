@@ -16,12 +16,15 @@ class ChassisPart: SKSpriteNode {
     
     var expectedPartName: String!
     
+    var score: Int = 0
+    
     var isFilled = false {
         didSet {
             if isFilled {
                 self.addChild(designedPart!)
                 designedPart.isUserInteractionEnabled = true
                 designedPart.anchorPoints.forEach{$0.isDisabled = false}
+                score += 20
             }
         }
         
@@ -31,14 +34,6 @@ class ChassisPart: SKSpriteNode {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-//        if let base = self.parent as? ItemBaseSprite,
-//            let cScene = base.parentScene, cScene.selectionState == .assemblyComponent,
-//            let partName = cScene.selectableComponents[cScene.selectedComponentIdx].partNaming,
-//            partName == expectedPartName, isFilled == false {
-//            isFilled = true
-//            cScene.selectableComponents[cScene.selectedComponentIdx].isSelected = false
-//            cScene.selectionState = .unselected
-//        }
         
        if UserSelectionManager.shared.selectionState == .assemblyComponent &&
         UserSelectionManager.shared.selectedSlotPartName == expectedPartName!, isFilled == false {
@@ -46,9 +41,15 @@ class ChassisPart: SKSpriteNode {
           sceneSelectionDelegate?.resetUserSelection()
         
         }
-        
     }
     
-    
+
+    func getPartScore() -> Int {
+        
+        if designedPart.isCompleted && isFilled {
+            return score + designedPart.score
+        }
+        return 0
+    }
     
 }

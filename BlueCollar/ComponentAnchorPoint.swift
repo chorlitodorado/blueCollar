@@ -23,7 +23,7 @@ enum AnchorState {
 class ComponentAnchorPoint: SelectableNode {
     
     var anchorType: AnchorType!
-    var score: Double = 0
+    var score: Int = 0
     
     var isDisabled: Bool = true {
         didSet {
@@ -46,7 +46,8 @@ class ComponentAnchorPoint: SelectableNode {
                 isDisabled = true
             } else {
                 self.texture = SKTexture(imageNamed: "anchorPointFail")
-                score -= 10
+                // TODO should be -10
+                score = 0
                 isDisabled = true
             }
             

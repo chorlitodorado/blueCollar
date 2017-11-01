@@ -38,6 +38,8 @@ class GamePlayScene: SKScene {
     
     var stateMachine: GKStateMachine!
     
+    var item: ItemUnit!
+    
     var selectionState: SelectionState = .unselected {
         didSet {
             UserSelectionManager.shared.selectionState = selectionState
@@ -54,7 +56,9 @@ class GamePlayScene: SKScene {
         loadPartSlots()
         // let _ = loadNewItem(fileName: "TestPhone")
         
-        let _ = loadNewProductTest(fileName: "SmartPhoneABase")
+      //  let _ = loadNewProductTest(fileName: "SmartPhoneABase")
+        
+        item = loadNewProductTest2(fileName: "SmartPhoneABase")
     }
     
     func loadToolSlots() {
@@ -91,8 +95,8 @@ class GamePlayScene: SKScene {
         self.selectableComponents.append(partSlot0)
         
         partSlot1.tag = 1
-        partSlot1.partNaming = "testPhoneFlashMemo"
-        partSlot1.addComponent(partName: "testPhoneFlashMemoThumbnail@2x")
+        partSlot1.partNaming = "flashMemoryA0"
+        partSlot1.addComponent(partName: "flashMemoryA0Thumbnail")
         self.selectableComponents.append(partSlot1)
         
         partSlot2.tag = 2
@@ -185,7 +189,6 @@ class GamePlayScene: SKScene {
         
         
         board.partName = board.name!
-        board.pointsToComplete = 40
         board.anchorPoints = [anchor0Space0, anchor1Space0, anchor2Space0, anchor3Space0]
         board.removeFromParent()
         fillSpace0.sceneSelectionDelegate = self
@@ -198,12 +201,84 @@ class GamePlayScene: SKScene {
     }
     
     
-//    func loadNewProductTest2(fileName: String) -> ItemUnit? {
-//        
-//        
-//        
-//        
-//    }
+    func loadNewProductTest2(fileName: String) -> ItemUnit? {
+
+        guard let beltBck = self.childNode(withName: "beltBckg") as? SKSpriteNode, let itemScene = SKScene(fileNamed: fileName),
+            let group = itemScene.childNode(withName: "testPhoneGuideChasis") as? ChassisGroup else {
+                
+                return nil
+        }
+        
+        group.removeFromParent()
+        beltBck.addChild(group)
+        
+        // BOARD
+        
+        guard let fillSpace0 = group.childNode(withName: "testPhoneBoardGuideChasis") as? ChassisPart,
+            let partScene = SKScene(fileNamed: "BoardA0"),
+            let board = partScene.childNode(withName: "boardA0") as? Part,
+            let anchor0Space0 = board.childNode(withName: "anchorWelder0") as? ComponentAnchorPoint,
+            let anchor1Space0 = board.childNode(withName: "anchorWelder1") as? ComponentAnchorPoint,
+            let anchor2Space0 = board.childNode(withName: "anchorWelder2") as? ComponentAnchorPoint,
+            let anchor3Space0 = board.childNode(withName: "anchorWelder3") as? ComponentAnchorPoint
+            else {
+                return nil
+        }
+        
+        anchor0Space0.anchorType = .welder
+        anchor1Space0.anchorType = .welder
+        anchor2Space0.anchorType = .welder
+        anchor3Space0.anchorType = .welder
+        
+        
+        board.partName = board.name!
+        board.anchorPoints = [anchor0Space0, anchor1Space0, anchor2Space0, anchor3Space0]
+        board.removeFromParent()
+        fillSpace0.sceneSelectionDelegate = self
+        fillSpace0.designedPart = board
+        fillSpace0.expectedPartName = board.name!
+        fillSpace0.isUserInteractionEnabled = true
+        
+        // MEMORY
+        
+        guard let fillSpace1 = group.childNode(withName: "testPhoneMemoryGuideChasis") as? ChassisPart,
+            let part2Scene = SKScene(fileNamed: "FlashMemoryA0"),
+            let memo = part2Scene.childNode(withName: "flashMemoryA0") as? Part,
+            let anchor0Space1 = memo.childNode(withName: "anchorGlue0") as? ComponentAnchorPoint,
+            let anchor1Space1 = memo.childNode(withName: "anchorGlue1") as? ComponentAnchorPoint
+            else {
+                return nil
+        }
+
+        anchor0Space1.anchorType = .glue
+        anchor1Space1.anchorType = .glue
+        
+        
+        memo.partName = memo.name!
+        memo.anchorPoints = [anchor0Space1, anchor1Space1]
+        memo.removeFromParent()
+        fillSpace1.sceneSelectionDelegate = self
+        fillSpace1.designedPart = memo
+        fillSpace1.expectedPartName = memo.name!
+        fillSpace1.isUserInteractionEnabled = true
+        
+        
+        // GROUP
+
+        
+        group.chassisParts = [fillSpace0, fillSpace1]
+        group.isItemBase = true
+        group.maxScore = 110
+        
+        var chs = [ChassisGroup]()
+        chs.append(group)
+        
+        let item = ItemUnit(name: "testPhone", manufacturer: "Acme", maxScore: 110, components: chs)
+        
+        return item
+
+
+    }
     
     func toolSlotTouched(state: SelectionState) {
         

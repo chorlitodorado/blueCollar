@@ -70,6 +70,9 @@
 		5FB9170B1FA97D32000D87DD /* UserSelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9170A1FA97D32000D87DD /* UserSelectionManager.swift */; };
 		5FB9170D1FA997A1000D87DD /* ChassisGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9170C1FA997A1000D87DD /* ChassisGroup.swift */; };
 		5FB9170F1FA99B49000D87DD /* ItemUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB9170E1FA99B49000D87DD /* ItemUnit.swift */; };
+		5FB917121FA9B0C9000D87DD /* flashMemoryA0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917101FA9B0C7000D87DD /* flashMemoryA0@2x.png */; };
+		5FB917131FA9B0C9000D87DD /* flashMemoryA0Thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917111FA9B0C9000D87DD /* flashMemoryA0Thumbnail@2x.png */; };
+		5FB917151FA9B10C000D87DD /* FlashMemoryA0.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5FB917141FA9B10C000D87DD /* FlashMemoryA0.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +153,9 @@
 		5FB9170A1FA97D32000D87DD /* UserSelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionManager.swift; sourceTree = "<group>"; };
 		5FB9170C1FA997A1000D87DD /* ChassisGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChassisGroup.swift; sourceTree = "<group>"; };
 		5FB9170E1FA99B49000D87DD /* ItemUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUnit.swift; sourceTree = "<group>"; };
+		5FB917101FA9B0C7000D87DD /* flashMemoryA0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashMemoryA0@2x.png"; sourceTree = "<group>"; };
+		5FB917111FA9B0C9000D87DD /* flashMemoryA0Thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashMemoryA0Thumbnail@2x.png"; sourceTree = "<group>"; };
+		5FB917141FA9B10C000D87DD /* FlashMemoryA0.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlashMemoryA0.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				5FB917001FA97049000D87DD /* BoardA0.sks */,
+				5FB917141FA9B10C000D87DD /* FlashMemoryA0.sks */,
 				5FB917081FA976DA000D87DD /* SmartPhoneABase.sks */,
 			);
 			path = Parts;
@@ -303,6 +310,8 @@
 			children = (
 				5FB917031FA97298000D87DD /* BoardA0@2x.png */,
 				5FB917041FA97298000D87DD /* BoardA0Thumbnail@2x.png */,
+				5FB917101FA9B0C7000D87DD /* flashMemoryA0@2x.png */,
+				5FB917111FA9B0C9000D87DD /* flashMemoryA0Thumbnail@2x.png */,
 			);
 			path = PartsAssets;
 			sourceTree = "<group>";
@@ -404,6 +413,7 @@
 				5F0AFD621FA56292008960AB /* testPhoneGuideChasis@2x.png in Resources */,
 				5F5D1EDE1FA4A84E0079ED6C /* Assets.xcassets in Resources */,
 				5FB917061FA97298000D87DD /* BoardA0Thumbnail@2x.png in Resources */,
+				5FB917131FA9B0C9000D87DD /* flashMemoryA0Thumbnail@2x.png in Resources */,
 				5F0AFD791FA5AF5E008960AB /* TestPhone.sks in Resources */,
 				5FB917091FA976DA000D87DD /* SmartPhoneABase.sks in Resources */,
 				5F0AFD521FA55765008960AB /* testPhoneFront@2x.png in Resources */,
@@ -422,10 +432,12 @@
 				5F0AFD4C1FA55765008960AB /* anchorPointScrew@2x.png in Resources */,
 				5F0AFD5C1FA55765008960AB /* partSlotPage@2x.png in Resources */,
 				5F0AFD631FA56292008960AB /* testPhoneBatteryGuideChasis@2x.png in Resources */,
+				5FB917151FA9B10C000D87DD /* FlashMemoryA0.sks in Resources */,
 				5F0AFD641FA56292008960AB /* testPhoneCameraGuideChasis@2x.png in Resources */,
 				5F0AFD461FA55765008960AB /* testPhoneFlashMemoThumbnail@2x.png in Resources */,
 				5F5D1ED51FA4A84E0079ED6C /* Actions.sks in Resources */,
 				5F0AFD4F1FA55765008960AB /* partSlotUnselect@2x.png in Resources */,
+				5FB917121FA9B0C9000D87DD /* flashMemoryA0@2x.png in Resources */,
 				5F0AFD561FA55765008960AB /* testPhoneBoardThumbnail@2x.png in Resources */,
 				5F0AFD4D1FA55765008960AB /* partSlotSelect@2x.png in Resources */,
 				5F0AFD651FA56292008960AB /* testPhoneBoardGuideChasis@2x.png in Resources */,
