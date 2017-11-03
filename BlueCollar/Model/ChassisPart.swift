@@ -27,19 +27,16 @@ class ChassisPart: SKSpriteNode {
                 score += 20
             }
         }
-        
     }
     
    weak var sceneSelectionDelegate: SelectionHandlerProtocol?
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        
        if UserSelectionManager.shared.selectionState == .assemblyComponent &&
         UserSelectionManager.shared.selectedSlotPartName == expectedPartName!, isFilled == false {
           isFilled = true
           sceneSelectionDelegate?.resetUserSelection()
-        
         }
     }
     

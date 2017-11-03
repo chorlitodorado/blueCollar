@@ -100,13 +100,13 @@ class GamePlayScene: SKScene {
         self.selectableComponents.append(partSlot1)
         
         partSlot2.tag = 2
-        partSlot2.partNaming = "testPhoneCamera"
-        partSlot2.addComponent(partName: "testPhoneCamera@2x")
+        partSlot2.partNaming = "cameraA0"
+        partSlot2.addComponent(partName: "cameraA0")
         self.selectableComponents.append(partSlot2)
         
         partSlot3.tag = 3
-        partSlot3.partNaming = "testPhoneBattery"
-        partSlot3.addComponent(partName: "testPhoneBatteryThumbnail@2x")
+        partSlot3.partNaming = "batteryA0"
+        partSlot3.addComponent(partName: "batteryA0Thumbnail")
         self.selectableComponents.append(partSlot3)
         
         partSlot4.tag = 4
@@ -122,43 +122,6 @@ class GamePlayScene: SKScene {
         
     }
     
-//    func loadNewItem(fileName: String) -> SKSpriteNode? {
-//
-//        guard let beltBck = self.childNode(withName: "beltBckg") as? SKSpriteNode, let itemScene = SKScene(fileNamed: fileName),
-//            let partsBck = itemScene.childNode(withName: "testPhoneGuideChasis") as? ItemBaseSprite,
-//            let fillSpace0 = partsBck.childNode(withName: "testPhoneBoardGuideChasis") as? SelectableChasisSpace,
-//            let anchor0Space0 = fillSpace0.childNode(withName: "anchorWelder0") as? ComponentAnchorPoint,
-//            let anchor1Space0 = fillSpace0.childNode(withName: "anchorWelder1") as? ComponentAnchorPoint,
-//            let anchor2Space0 = fillSpace0.childNode(withName: "anchorWelder2") as? ComponentAnchorPoint,
-//            let anchor3Space0 = fillSpace0.childNode(withName: "anchorWelder3") as? ComponentAnchorPoint,
-//            let fillSpace1 = partsBck.childNode(withName: "testPhoneCameraGuideChasis") as? SelectableChasisSpace,
-//            let fillSpace2 = partsBck.childNode(withName: "testPhoneMemoryGuideChasis") as? SelectableChasisSpace,
-//            let fillSpace3 = partsBck.childNode(withName: "testPhoneBatteryGuideChasis") as? SelectableChasisSpace else {
-//
-//                return nil
-//        }
-//
-//        anchor0Space0.anchorType = .welder
-//        anchor1Space0.anchorType = .welder
-//        anchor2Space0.anchorType = .welder
-//        anchor3Space0.anchorType = .welder
-//        fillSpace0.expectedPartName = "testPhoneBoard"
-//        fillSpace0.anchorPoints = [anchor0Space0, anchor1Space0, anchor2Space0, anchor3Space0]
-//        fillSpace1.expectedPartName = "testPhoneCamera"
-//        fillSpace2.expectedPartName = "testPhoneFlashMemo"
-//        fillSpace3.expectedPartName = "testPhoneBattery"
-//
-//        partsBck.fillableSpaces = [fillSpace0, fillSpace1, fillSpace2, fillSpace3]
-//        partsBck.removeFromParent()
-//        partsBck.parentScene = self
-//
-//        beltBck.addChild(partsBck)
-//
-//        return partsBck
-//
-//
-//    }
-    
     func loadNewProductTest(fileName: String) -> SKSpriteNode? {
         
         guard let beltBck = self.childNode(withName: "beltBckg") as? SKSpriteNode, let itemScene = SKScene(fileNamed: fileName),
@@ -168,7 +131,6 @@ class GamePlayScene: SKScene {
         }
         
         partsBck.removeFromParent()
-       // partsBck.parentScene = self
         beltBck.addChild(partsBck)
         
         guard let fillSpace0 = partsBck.childNode(withName: "testPhoneBoardGuideChasis") as? ChassisPart,
@@ -263,10 +225,55 @@ class GamePlayScene: SKScene {
         fillSpace1.isUserInteractionEnabled = true
         
         
-        // GROUP
+        // BATTERY
+        
+        guard let fillSpace2 = group.childNode(withName: "testPhoneBatteryGuideChasis") as? ChassisPart,
+            let part3Scene = SKScene(fileNamed: "BatteryA0"),
+            let battery = part3Scene.childNode(withName: "batteryA0") as? Part,
+            let anchor0Space2 = battery.childNode(withName: "anchorScrew0") as? ComponentAnchorPoint,
+            let anchor1Space2 = battery.childNode(withName: "anchorScrew1") as? ComponentAnchorPoint
+            else {
+                return nil
+        }
+        
+        anchor0Space2.anchorType = .screw
+        anchor1Space2.anchorType = .screw
+        
+        
+        battery.partName = battery.name!
+        battery.anchorPoints = [anchor0Space2, anchor1Space2]
+        battery.removeFromParent()
+        fillSpace2.sceneSelectionDelegate = self
+        fillSpace2.designedPart = battery
+        fillSpace2.expectedPartName = battery.name!
+        fillSpace2.isUserInteractionEnabled = true
 
         
-        group.chassisParts = [fillSpace0, fillSpace1]
+        // CAMERA
+        
+        
+        guard let fillSpace3 = group.childNode(withName: "testPhoneCameraGuideChasis") as? ChassisPart,
+            let part4Scene = SKScene(fileNamed: "CameraA0"),
+            let camera = part4Scene.childNode(withName: "cameraA0") as? Part,
+            let anchor0Space3 = camera.childNode(withName: "anchorGlue0") as? ComponentAnchorPoint
+            else {
+                return nil
+        }
+
+        anchor0Space3.anchorType = .glue
+        
+        camera.partName = camera.name!
+        camera.anchorPoints = [anchor0Space3]
+        camera.removeFromParent()
+        fillSpace3.sceneSelectionDelegate = self
+        fillSpace3.designedPart = camera
+        fillSpace3.expectedPartName = camera.name!
+        fillSpace3.isUserInteractionEnabled = true
+
+        
+        // GROUP
+
+        group.chassisParts = [fillSpace0, fillSpace1, fillSpace2, fillSpace3]
         group.isItemBase = true
         group.maxScore = 110
         

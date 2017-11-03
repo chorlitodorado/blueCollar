@@ -52,6 +52,11 @@
 		5F0AFD7D1FA5BA9C008960AB /* ItemBaseSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */; };
 		5F0AFD7F1FA5CAA0008960AB /* Levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F0AFD7E1FA5CAA0008960AB /* Levels.plist */; };
 		5F0AFD811FA5D7E3008960AB /* ComponentAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */; };
+		5F2BB2A21FABE4DF00D3324A /* batteryA0Thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB29F1FABE4DF00D3324A /* batteryA0Thumbnail@2x.png */; };
+		5F2BB2A31FABE4DF00D3324A /* cameraA0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB2A01FABE4DF00D3324A /* cameraA0@2x.png */; };
+		5F2BB2A41FABE4DF00D3324A /* batteryA0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB2A11FABE4DF00D3324A /* batteryA0@2x.png */; };
+		5F2BB2A61FABE66D00D3324A /* BatteryA0.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB2A51FABE66D00D3324A /* BatteryA0.sks */; };
+		5F2BB2A91FABF20D00D3324A /* CameraA0.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB2A81FABF20D00D3324A /* CameraA0.sks */; };
 		5F5D1ED11FA4A84E0079ED6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D1ED01FA4A84E0079ED6C /* AppDelegate.swift */; };
 		5F5D1ED31FA4A84E0079ED6C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D1ED21FA4A84E0079ED6C /* GameScene.sks */; };
 		5F5D1ED51FA4A84E0079ED6C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D1ED41FA4A84E0079ED6C /* Actions.sks */; };
@@ -131,6 +136,11 @@
 		5F0AFD7C1FA5BA9C008960AB /* ItemBaseSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBaseSprite.swift; sourceTree = "<group>"; };
 		5F0AFD7E1FA5CAA0008960AB /* Levels.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Levels.plist; sourceTree = "<group>"; };
 		5F0AFD801FA5D7E3008960AB /* ComponentAnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentAnchorPoint.swift; sourceTree = "<group>"; };
+		5F2BB29F1FABE4DF00D3324A /* batteryA0Thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batteryA0Thumbnail@2x.png"; sourceTree = "<group>"; };
+		5F2BB2A01FABE4DF00D3324A /* cameraA0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraA0@2x.png"; sourceTree = "<group>"; };
+		5F2BB2A11FABE4DF00D3324A /* batteryA0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batteryA0@2x.png"; sourceTree = "<group>"; };
+		5F2BB2A51FABE66D00D3324A /* BatteryA0.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BatteryA0.sks; sourceTree = "<group>"; };
+		5F2BB2A81FABF20D00D3324A /* CameraA0.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CameraA0.sks; sourceTree = "<group>"; };
 		5F5D1ECD1FA4A84E0079ED6C /* BlueCollar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueCollar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F5D1ED01FA4A84E0079ED6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F5D1ED21FA4A84E0079ED6C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -224,6 +234,14 @@
 			path = States;
 			sourceTree = "<group>";
 		};
+		5F2BB2A71FABF09100D3324A /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				5FB917081FA976DA000D87DD /* SmartPhoneABase.sks */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		5F5D1EC41FA4A84E0079ED6C = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +272,7 @@
 				5F0AFD761FA5AF44008960AB /* TestPhone.swift */,
 				5F0AFD781FA5AF5E008960AB /* TestPhone.sks */,
 				5FB9170A1FA97D32000D87DD /* UserSelectionManager.swift */,
+				5F2BB2A71FABF09100D3324A /* Items */,
 				5FB916FF1FA96FFC000D87DD /* Parts */,
 				5F0AFD241FA556D9008960AB /* GamePlayScene.swift */,
 				5F0AFD691FA56EF9008960AB /* ScrewToolSprite.swift */,
@@ -300,7 +319,8 @@
 			children = (
 				5FB917001FA97049000D87DD /* BoardA0.sks */,
 				5FB917141FA9B10C000D87DD /* FlashMemoryA0.sks */,
-				5FB917081FA976DA000D87DD /* SmartPhoneABase.sks */,
+				5F2BB2A51FABE66D00D3324A /* BatteryA0.sks */,
+				5F2BB2A81FABF20D00D3324A /* CameraA0.sks */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
@@ -308,6 +328,9 @@
 		5FB917021FA97272000D87DD /* PartsAssets */ = {
 			isa = PBXGroup;
 			children = (
+				5F2BB2A11FABE4DF00D3324A /* batteryA0@2x.png */,
+				5F2BB29F1FABE4DF00D3324A /* batteryA0Thumbnail@2x.png */,
+				5F2BB2A01FABE4DF00D3324A /* cameraA0@2x.png */,
 				5FB917031FA97298000D87DD /* BoardA0@2x.png */,
 				5FB917041FA97298000D87DD /* BoardA0Thumbnail@2x.png */,
 				5FB917101FA9B0C7000D87DD /* flashMemoryA0@2x.png */,
@@ -401,6 +424,7 @@
 			files = (
 				5F0AFD4A1FA55765008960AB /* testPhoneFlashMemo@2x.png in Resources */,
 				5F0AFD7F1FA5CAA0008960AB /* Levels.plist in Resources */,
+				5F2BB2A31FABE4DF00D3324A /* cameraA0@2x.png in Resources */,
 				5F5D1EDC1FA4A84E0079ED6C /* Main.storyboard in Resources */,
 				5F0AFD431FA55765008960AB /* testPhoneBattery@2x.png in Resources */,
 				5F5D1ED31FA4A84E0079ED6C /* GameScene.sks in Resources */,
@@ -419,8 +443,10 @@
 				5F0AFD521FA55765008960AB /* testPhoneFront@2x.png in Resources */,
 				5F0AFD5A1FA55765008960AB /* anchorPointOk@2x.png in Resources */,
 				5FB917051FA97298000D87DD /* BoardA0@2x.png in Resources */,
+				5F2BB2A61FABE66D00D3324A /* BatteryA0.sks in Resources */,
 				5F0AFD511FA55765008960AB /* toolScrewButtonUnSel@2x.png in Resources */,
 				5F0AFD4B1FA55765008960AB /* toolScrewButtonSel@2x.png in Resources */,
+				5F2BB2A21FABE4DF00D3324A /* batteryA0Thumbnail@2x.png in Resources */,
 				5F0AFD5B1FA55765008960AB /* partsBckg@2x.png in Resources */,
 				5F0AFD491FA55765008960AB /* toolsBckg@2x.png in Resources */,
 				5F0AFD501FA55765008960AB /* testPhoneFrontThumbnail@2x.png in Resources */,
@@ -433,7 +459,9 @@
 				5F0AFD5C1FA55765008960AB /* partSlotPage@2x.png in Resources */,
 				5F0AFD631FA56292008960AB /* testPhoneBatteryGuideChasis@2x.png in Resources */,
 				5FB917151FA9B10C000D87DD /* FlashMemoryA0.sks in Resources */,
+				5F2BB2A91FABF20D00D3324A /* CameraA0.sks in Resources */,
 				5F0AFD641FA56292008960AB /* testPhoneCameraGuideChasis@2x.png in Resources */,
+				5F2BB2A41FABE4DF00D3324A /* batteryA0@2x.png in Resources */,
 				5F0AFD461FA55765008960AB /* testPhoneFlashMemoThumbnail@2x.png in Resources */,
 				5F5D1ED51FA4A84E0079ED6C /* Actions.sks in Resources */,
 				5F0AFD4F1FA55765008960AB /* partSlotUnselect@2x.png in Resources */,
